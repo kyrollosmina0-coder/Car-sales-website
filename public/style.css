@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: #222;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px 8%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar h2 {
+  color: #0d6efd;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #0d6efd;
+}
+
+.hero-section {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-box {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 35px;
+  border-radius: 18px;
+  max-width: 650px;
+}
+
+.hero-box h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.page-section {
+  padding: 60px 8%;
+}
+
+.dark-section {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+.page-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.buyer-box,
+.review-form {
+  background: white;
+  color: #222;
+  max-width: 550px;
+  margin: 0 auto 35px auto;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.buyer-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.car-card {
+  background: white;
+  color: #222;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.car-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h3 {
+  margin-bottom: 8px;
+}
+
+.card-info p {
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  background: #0d6efd;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #084db5;
+}
+
+.review-section {
+  background: #f3f4f6;
+}
+
+.review-section h3 {
+  text-align: center;
+  margin: 25px 0 15px 0;
+}
+
+.reviews-list {
+  max-width: 750px;
+  margin: auto;
+}
+
+.review-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 430px;
+  padding: 28px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal-content h2,
+.modal-content p {
+  margin-bottom: 12px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.not-paid {
+  background: #dc3545;
+}
+
+.not-paid:hover {
+  background: #9f1f2c;
+}
+
+footer {
+  background: #0b1220;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+@media (max-width: 900px) {
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar a {
+    margin: 0 8px;
+  }
+
+  .hero-box h1 {
+    font-size: 32px;
+  }
+}
+
+.info-section {
+  background: #f3f4f6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.main-link {
+  display: inline-block;
+  margin-top: 20px;
+  background: #0d6efd;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.full-page {
+  min-height: calc(100vh - 120px);
+}
+
+@media (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "car-sales",
+  "version": "1.0.0",
+  "description": "car sales website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
